@@ -1,0 +1,33 @@
+@use '../../layout/layout';
+
+.hall {
+    @include layout.default();
+    background: linear-gradient(180deg, #839277 0%, #272C24 100%);
+    padding: var(--section-gap) 0;
+   
+
+    &__inner {
+        display: flex;
+        color: var(--color-light-yellow);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 672px;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__image {
+        height: auto;
+        max-width: 438px;
+    }
+
+}

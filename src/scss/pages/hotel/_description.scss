@@ -1,0 +1,39 @@
+@use '../../layout/layout';
+
+.description {
+    @include layout.default();
+    padding: var(--section-gap) 0;
+   
+
+    &__inner {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 672px;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__list {
+        padding-left: 1.5rem;
+    }
+
+    &__item {
+        list-style: disc;
+    }
+
+    &__image {
+        height: auto;
+        max-width: 438px;
+    }
+
+}

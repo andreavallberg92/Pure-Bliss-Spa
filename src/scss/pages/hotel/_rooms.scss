@@ -1,0 +1,46 @@
+@use '../../layout/layout';
+
+.rooms {
+    @include layout.default();
+    background: linear-gradient(180deg, #839277 0%, #272C24 100%);
+    padding: var(--section-gap) 0;
+   
+
+    &__inner {
+        display: flex;
+        color: var(--color-light-yellow);
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 672px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__image {
+        height: auto;
+        max-width: 438px;
+    }
+
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

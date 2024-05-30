@@ -1,0 +1,44 @@
+@use '../../layout/layout';
+
+.facilites {
+    @include layout.default();
+    padding: var(--section-gap) 0;
+   
+
+    &__inner {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 672px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__image {
+        height: auto;
+        max-width: 438px;
+    }
+
+}
+
+.facilite {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

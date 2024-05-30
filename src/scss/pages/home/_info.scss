@@ -1,0 +1,51 @@
+@use '../../layout/layout';
+@use '../../components/buttons';
+
+.info {
+    @include layout.default();
+    padding: var(--section-gap) 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--section-gap);
+    }
+
+}
+
+.info-card {
+    display: flex;
+    gap: 149px;
+    align-items: center;
+
+    &__image {
+        width: 438px;
+        height: 438px;
+    }
+
+    &__bredcrumb {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    
+    &__title {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    &__text {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        
+        a {
+            @include buttons.default();
+            
+        }
+    }
+}

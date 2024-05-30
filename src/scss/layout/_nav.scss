@@ -1,0 +1,53 @@
+@use 'layout';
+@use '../components/buttons';
+
+.site-header {
+    @include layout.default(full);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 54%, rgba(240, 233, 209, 0.22) 100%);
+    backdrop-filter: blur(8px);
+
+    &__inner {
+        padding: 0 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: var(--font-main);
+        font-size: var(--font-size-3);
+        color: var(--color-light-yellow);
+    }
+}
+
+.menu {
+    
+    &__list {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__item {
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            scale: 1.1;
+        }
+
+    }
+
+    &__link {
+        font-family: var(--color-sec);
+        font-size: var(--font-size-1);
+        color: var(--color-light-yellow);
+
+    }
+
+    &__button {
+        @include buttons.default();
+    }
+}

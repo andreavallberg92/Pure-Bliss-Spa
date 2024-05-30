@@ -1,0 +1,65 @@
+@use '../../layout/layout';
+@use '../../components/buttons';
+
+.package {
+    @include layout.default();
+    margin: var(--section-gap) 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &__content {
+        max-width: 790px;
+    }
+
+    &__breadcrumb {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+        max-width: 672px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.package-card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+
+    &__image {
+        height: 226px;
+        width: 320px;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        margin: 0;
+        padding-left: 1.5rem;
+    }
+    
+    &__item {
+        list-style: disc;
+
+    }
+}

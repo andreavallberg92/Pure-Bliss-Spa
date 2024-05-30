@@ -1,0 +1,40 @@
+:root {
+
+    --font-main: "Vollkorn", serif;
+    --font-sec: "Lato", sans-serif;
+
+    --font-size: 16px;
+    --font-scale: 1.25;
+
+    --font-size-1: calc(var(--font-size) * var(--font-scale));
+    --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
+    --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
+    --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
+    --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
+    --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+    --font-size-small: calc( var(--font-size) / var(--font-scale));
+
+    --line-height: 1.6;
+
+    --color-dark: #0A0B09;
+    --color-green: #839277;
+    --color-dark-pink: #C09787;
+    --color-light-baige: #F7E7CE;
+    --color-light-yellow: #F0E9D1;
+    
+
+    --border-radius: 5px;
+
+    --padding-content: 2rem;
+
+    --section-gap: 6rem;
+    --gap-content: 2rem;
+    --gap-large: 1rem;
+    --gap-small: 0.75rem;
+
+    --inner-width: 71.5rem;
+
+    --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--inner-width)) [inner-end] minmax(32px, 1fr) [full-end];
+
+
+}

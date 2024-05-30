@@ -1,0 +1,23 @@
+@mixin default(
+    $backgraund: var(--color-green),
+    $color: var(--color-light-yellow),
+    $hover-color: var(--color-dark),
+    $hover-backgraund: var(--color-dark-pink),
+    ) {
+    background-color: $backgraund;
+    color: $color;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-sec);
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: $hover-color;
+        background-color: $hover-backgraund;
+        border: 1px solid $hover-color;
+    }
+}

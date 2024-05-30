@@ -1,0 +1,12 @@
+@use '../../layout/layout';
+@use '../../components/buttons';
+
+.map {
+    @include layout.default(full);
+    overflow: hidden;
+
+    &__inner {
+        height: 400px;
+        width: 100%;
+    }
+}
